@@ -1,0 +1,128 @@
+
+.send-button {
+  background-color: #0044ff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  color: #ffffff;
+  margin-left: 10px;
+  font-size: 17px;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.send-button:hover {
+  background-color: #0036cc;
+}
+
+.send-button:active {
+  transform: scale(0.97);
+}
+
+.input-field {
+  border-radius: 10px;
+  padding: 10px 14px;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  outline: none;
+  flex-grow: 1;
+  color: #000000;
+  background-color: #ffffff;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.input-field::placeholder {
+  color: #888888;
+}
+
+.input-field:focus {
+  border-color: #0044ff;
+  box-shadow: 0 0 0 3px rgba(0, 68, 255, 0.12);
+}
+
+.box {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.message-styling {
+  border-radius: 18px;
+  padding: 10px 15px;
+  margin: 0;
+  background-color: rgb(232, 230, 230);
+  color: #000000;
+  width: fit-content;
+  max-width: 75%;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+  text-align: left;
+}
+
+.chat-message-user {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.chat-message-bot {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.chat-message-user .message-styling {
+  background-color: #e2edff;
+}
+
+.chat-message-bot .message-styling {
+  background-color: #f0f0f0;
+}
+
+.app-container {
+  max-width: 600px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  height: calc(100vh - 74px);
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  color: #000000;
+  border-radius: 15px;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.07);
+  margin-top: 37px;
+  margin-bottom: 37px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.chat-message-user img,
+.chat-message-bot img {
+  flex-shrink: 0;
+  object-fit: cover;
+}
+
+.chat-messages-container {
+  flex-grow: 1;
+  margin-top: 20px;
+  overflow-y: auto;
+  min-height: 0;
+  color: #000000;
+}
+
+.input-container {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.loading-spinner {
+  text-align: center;
+  color: #888888;
+  padding: 10px;
+}
